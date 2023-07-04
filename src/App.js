@@ -1,23 +1,48 @@
 import logo from './logo.svg';
 import './App.css';
+import { Component, useEffect, useState } from 'react';
+import Navbar from './component/Navbar.js'
+import Spinner from './component/Spinner'
+
+import Main_text from './component/Main_text';
+import Home from './component/Home';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Routes
+} from "react-router-dom";
+import Photo from './component/Photo';
+import Videos from './component/Videos';
+
 
 function App() {
+
+const[query,setQuery]=useState("")
+const set_query=(x)=>{
+  console.log(x)
+  setQuery(x)
+}
+const[spinner,set_spinner]=useState(false)
+const setSpinner=(z)=>{
+  set_spinner(z)
+}
+
+ 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+         <Navbar/>
+         <Routes>
+         <Route exact path="/"element={spinner?<Spinner/>:<Home set_query={set_query} />}/>
+         <Route exact path="/*"element={spinner?<Spinner/>:<Photo query={query} setSpinner={setSpinner} set_query={set_query}/>}/>
+        
+         </Routes>
+        
+         </Router>
+    
+    
+   
     </div>
   );
 }
