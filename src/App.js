@@ -59,7 +59,7 @@ const navbarStyle = {
          <Navbar navbarStyle={navbarStyle}/>
          <Routes>
          <Route exact path="/"element={spinner?<Spinner/>:<Home set_query={set_query} />}/>
-         <Route exact path="/*"element={spinner?<Spinner/>:<Photo query={query} setSpinner={setSpinner} set_query={set_query}/>}/>
+         <Route exact path="/*"element={<Photo query={query} setSpinner={setSpinner} set_query={set_query}/>}/>
         
          </Routes>
         

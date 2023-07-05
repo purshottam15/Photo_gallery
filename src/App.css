@@ -432,12 +432,13 @@ height: 77rem;
 .photo_search_container input{
   height: 9rem;
   font-size: 2.5rem;
-  width: 30rem;
+  width: 45rem;
   margin-left: -2rem;
   margin-top: 5rem;
 }
 .photo_search_container button{
-  margin: 6rem 0rem;
+  margin: 5.1rem -20rem;
+    height: 9.2rem;
 }
 
   
