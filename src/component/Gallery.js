@@ -7,7 +7,7 @@ export default function Gallery(props) {
 
 
     async function fetch_photo(){
-        try{ let photo= await fetch('https://pixabay.com/api/?key=32395397-81682bba220e9e694a2920032&category=animal&image_type=photo&pretty=true')
+        try{ let photo= await fetch('https://pixabay.com/api/?key=32395397-81682bba220e9e694a2920032&q="popular"&category=india&image_type=photo&pretty=true')
         let photo_fetched= await photo.json()
         setPhoto_url(photo_fetched.hits)}
         catch(error){

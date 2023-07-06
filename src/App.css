@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&display=swap');
 *{
   margin: 0;
   padding: 0;
 }
 body{
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Belanosima', sans-serif;
   background-color: black;
 
 }
@@ -81,12 +82,10 @@ img{
   font-size: 1.1rem;
   font-weight: 700;
   cursor: pointer;
+  text-decoration: none;
 
 }
-.list_item:hover{
-  text-decoration: underline;
-  text-underline-offset: 6px;
-}
+
 
 
 /* main conatiner-------------
@@ -205,7 +204,7 @@ img{
   position: absolute;
   /* margin-right:2rem ; */
   font-size: 1rem;
-  background-color: #00ab6b;
+  background-color: #db4242;
   color: white;
   font-weight: 600;
   cursor: pointer;
@@ -376,58 +375,68 @@ height: 77rem;
 
   }
   @media only screen and (max-width: 600px) {
+    
 .main_text{
   width: 61rem;
   font-size: 7rem;
+  margin: 8rem 0rem;
 
 
   }
   .text_container h3{
-    font-size: 5rem;
+    font-size: 6rem;
+    margin: 5rem 0rem;
   }
   .main_container{
-    height: 100rem;
+    height: 120rem;
+    background-image: url("https://images.pexels.com/photos/16738839/pexels-photo-16738839/free-photo-of-jaipur-india.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
   }
-  .top_pics{
-    font-size: 4rem;
-  }
+  
   .list_item{
-    font-size: 2rem;
+    font-size: 5rem;
   }
   .search input{
-    width: 60rem;
-    left: 5rem;
+    width: 62rem;
+    left: 0rem;
    font-size: 3rem;
+   height: 12rem;
+   margin-left: 0rem;
   }
   .search_btn{
     text-align: center;
+    height: 12rem;
+    width: 28rem;
+    font-size: 4rem;
   }
   .logo h2{
     font-size: 7rem;
-    margin-left: 5rem;
+    margin-left: 1rem;
   }
   .photo_container{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     top: 16rem;
+    margin-left: 3rem;
    
   
   }
   .photo_container img{
-    width: 30rem;
-    height: 35rem;
+    width: 60rem;
+    height: 70rem;
+    margin-top: 4rem;
   }
   .gallery_container{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     margin-left: 2rem;
   }
   .gallery_container img{
-    width: 35rem;
-    height: 42rem;
+    width: 70rem;
+    height: 70rem;
 }
 .navbar{
   height: 10rem;
+  gap: 5rem;
 }
 .photo_search_container input{
   height: 9rem;
@@ -439,6 +448,19 @@ height: 77rem;
 .photo_search_container button{
   margin: 5.1rem -20rem;
     height: 9.2rem;
+}
+.download_btn{
+  width: 55rem;
+  margin: -6rem -27rem;
+  height: 10rem;
+  font-size: 3rem;
+  
+}
+.top_pics{
+  font-size: 7rem;
+  width: 50rem;
+  margin-left: 13rem;
+  margin-top: 5rem;
 }
 
   

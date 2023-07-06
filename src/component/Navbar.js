@@ -13,9 +13,9 @@ export default function Navbar(props) {
         <div className="navbar_content">
           <ul className="navbar_item">
             <li className="list_item">
-              <Link to="/">Home</Link>
+              <Link to="/" style={{ textDecoration: 'none' }}>Home</Link>
             </li>
-            <li className="list_item">About</li>
+           
             <li className="list_item">
               <Link to="/gallery" style={{ textDecoration: 'none' }}>
                 Gallery
